@@ -4,17 +4,9 @@
 #include <cassert>
 #include <cstring>
 #include <ctime>
-//#include <stack>
-//#include "copy_constructor.h"
-//#include "use_static.h"
-//#include "use_operator_overload.h"
-//#include "node.h"
-//#include <map>
-//#include "use_template.cpp"
+#include "sort.h"
+
 using namespace std;
-
-#define SORT_NUM 40000
-
 
 void checkSort(int *number, int max){
 	for(int i=0; i<max-1; i++){
@@ -85,6 +77,9 @@ void insertionSort(int *number, int max){
 	}
 }
 
+/*
+//Test codes
+#define SORT_NUM 40000
 
 int main(){
 	int *number = new int[SORT_NUM];
@@ -102,13 +97,7 @@ int main(){
 	double elapsed_secs = double(end - begin) / CLOCKS_PER_SEC;
 	cout << "sorting time is:  " << elapsed_secs<<" seconds"<<endl;
 
-/*	
-	for (int i=0;i<SORT_NUM;i++){
-		cout<<number[i]<<endl; 
-	}*/
-
 	checkSort(number, SORT_NUM);
-
 	delete number;
 }
-
+*/
